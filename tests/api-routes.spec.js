@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-const localhost = "http://localhost:3000";
+const localhost = "http://localhost:3000/pages";
 
 test("simple api endpoint", async ({ request }) => {
   const response = await request.get(`${localhost}/api/hello`);
