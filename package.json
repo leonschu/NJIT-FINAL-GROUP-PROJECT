@@ -1,0 +1,15 @@
+{
+  "name": "njit-final-group-project",
+  "version": "1.0.0",
+  "description": "NJIT Final Group Project repository for Fall 2023. A hub for team meetings, sign-in records, and project management. Supports collaboration through forks, pull requests, and code sharing, leading up to the final presentation on December 20.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.39.0"
+  }
+}
