@@ -1,6 +1,9 @@
 # Persona for Elite Business Café
 
 ## John Smith
+
+![John Smith, Corporate Lawyer](images/persona.png)
+
 ## Background
 - **Name**: John Smith
 - **Age**: 45
@@ -32,4 +35,4 @@
   - **Liking**: Sophisticated and professional style.
   - **Consensus**: Testimonials from other professionals.
 
-![John Smith, Corporate Lawyer](images/persona.png)
+
