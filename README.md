@@ -8,11 +8,11 @@ NJIT Final Group Project repository for Fall 2023. A hub for team meetings, sign
 ## Final Business Analysis
 
 - [Business](docs/Elite_Business_Cafe_Business_Plan.md)
-- [Customer Journey](docs/Customer_Journey.md)
-- [Persona](docs/PERSONA.MD)
-- [SWOT Analysis](docs/SWOT.md)
 - [Competitive Analysis](docs/competitive_analysis.md)
-
+- [SWOT Analysis](docs/SWOT.md)
+- [Persona](docs/PERSONA.MD)
+- [Customer Journey](docs/Customer_Journey.md)
+  
 
 # Meeting Sign-In Sheet
 
