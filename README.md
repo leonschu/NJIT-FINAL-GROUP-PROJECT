@@ -5,6 +5,14 @@ Figma: [here](https://www.figma.com/file/UObgmWDXDSGRsESTWNizWz/NJIT---Final?nod
 
 NJIT Final Group Project repository for Fall 2023. A hub for team meetings, sign-in records, and project management. Supports collaboration through forks, pull requests, and code sharing, leading up to the final presentation on December 20.
 
+## Final Business Analysis
+
+- [Customer Journey](docs/Customer_Journey.md)
+- [Persona](docs/PERSONA.MD)
+- [SWOT Analysis](docs/SWOT.md)
+- [Competitive Analysis](docs/competitive_analysis.md)
+
+
 # Meeting Sign-In Sheet
 
 Each student should put an 'X' under their name on the days they have meetings.
