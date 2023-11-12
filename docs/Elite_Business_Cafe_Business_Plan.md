@@ -1,6 +1,8 @@
 
 # Business Plan for Elite Business Café
 
+![Elite Business Café Logo](images/Elite_Business_Cafe_Logo.png)
+
 ## Executive Summary
 Elite Business Café is a specialty coffee shop designed specifically for affluent business professionals, such as salespeople, lawyers, and executives. It focuses on providing an exclusive atmosphere conducive to business meetings and deal closures, along with high-quality specialty coffee and a premium service experience.
 
