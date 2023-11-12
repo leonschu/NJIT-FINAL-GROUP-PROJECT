@@ -32,4 +32,4 @@
   - **Liking**: Sophisticated and professional style.
   - **Consensus**: Testimonials from other professionals.
 
-![John Smith, Corporate Lawyer](images/persona.png){: .center .resize}
+![John Smith, Corporate Lawyer](images/persona.png)
