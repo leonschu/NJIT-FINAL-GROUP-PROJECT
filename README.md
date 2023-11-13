@@ -20,10 +20,10 @@ Each student should put an 'X' under their name on the days they have meetings.
 
 ### November 2023
 
-| Date        | Student 1 | Student 2 | Student 3 |
+| Date        | Leon      | Gabriel    | Mark     |
 |-------------|-----------|-----------|-----------|
-| Nov 8 (Wed) |           |           |           |
-| Nov 10 (Fri)|           |           |           |
+| Nov 8 (Wed) |     x     |      x    |     x     |
+| Nov 10 (Fri)|     x     |      x    |     x     |
 | Nov 15 (Wed)|           |           |           |
 | Nov 17 (Fri)|           |           |           |
 | *Nov 22 (Wed)* |       |           |           |  <!-- Skipped for Thanksgiving -->
