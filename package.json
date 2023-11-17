@@ -4,7 +4,12 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "test": "playwright test",
+        "part-3": "playwright test assets-metadata-css.spec.js",
+        "part-4": "playwright test pre-rendering-data-fetching.spec.js",
+        "part-5": "playwright test dynamic-routes.spec.js",
+        "part-6": "playwright test api-routes.spec.js"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.2.1",
