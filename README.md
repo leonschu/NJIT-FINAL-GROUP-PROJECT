@@ -13,6 +13,8 @@ NJIT Final Group Project repository for Fall 2023. A hub for team meetings, sign
 - [SWOT Analysis](docs/SWOT.md)
 - [Persona](docs/PERSONA.MD)
 - [Customer Journey](docs/Customer_Journey.md)
+- [📝 **IS601 Final Project: User Stories**](https://www.figma.com/file/ZkyO5DLknuRx9sBYcO2KvP/IS601---Final-Project---User-Stories?type=whiteboard&node-id=0-1&t=gQ9pDYrZhaXhBH2z-0)
+
   
 
 # Meeting Sign-In Sheet
