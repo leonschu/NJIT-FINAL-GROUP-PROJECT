@@ -38,10 +38,10 @@ export const HomeBanner = () => {
                             <Button href="#features">Features</Button>
                             <a
                                 role="button"
-                                href="https://github.com/christian-luntok/nutritrack"
+                                href="http://eepurl.com/iFjGxI"
                                 className="btn btn--secondary"
                             >
-                                Get Template
+                                Join Today
                                 <Icon icon="material-symbols:arrow-forward-rounded" />
                             </a>
                         </ButtonGroup>
@@ -59,6 +59,31 @@ export const HomeBanner = () => {
                             className="mx-auto"
                         />
                     </div>
+                </MotionBTTContainer>
+            </SectionContainer>
+        </SectionContainer>
+    );
+};
+
+export const HomeBanner_short = () => {
+    return (
+        <SectionContainer className="page-banner--container py-16">
+            <SectionContainer className="page-banner--inner-container wrap wrap-px z-10">
+                {/* Appear Second */}
+                <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
+                    <PageTitle className="text-center mx-auto" type="heavy">
+                        The effortless way to plan your meals with the power of
+                        Notion.
+                    </PageTitle>
+                </MotionBTTContainer>
+                {/* Appear Third */}
+                <MotionBTTContainer transition={{ delay: 0.6, duration: 0.5 }}>
+                    <Content className="text-center" alignment="center">
+                        <p>
+                            Streamline your nutrition journey and achieve your
+                            health goals with ease.{" "}
+                        </p>
+                    </Content>
                 </MotionBTTContainer>
             </SectionContainer>
         </SectionContainer>

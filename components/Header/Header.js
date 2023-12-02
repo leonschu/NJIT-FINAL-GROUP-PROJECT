@@ -31,10 +31,10 @@ export const Header = () => {
                     <ButtonGroup className="hidden md:block">
                         <a
                             role="button"
-                            href="https://github.com/christian-luntok/nutritrack"
+                            href="http://eepurl.com/iFjGxI"
                             className="btn btn--secondary ml-4"
                         >
-                            Get Template
+                            Join Today
                             <Icon icon="material-symbols:arrow-forward-rounded" />
                         </a>
                     </ButtonGroup>

@@ -75,10 +75,10 @@ export const Footer = () => {
                                 <ButtonGroup alignment="left">
                                     <a
                                         role="button"
-                                        href="https://github.com/christian-luntok/nutritrack"
+                                        href="http://eepurl.com/iFjGxI"
                                         className="btn btn--secondary"
                                     >
-                                        Get Template
+                                        Join Today
                                         <Icon icon="material-symbols:arrow-forward-rounded" />
                                     </a>
                                 </ButtonGroup>
