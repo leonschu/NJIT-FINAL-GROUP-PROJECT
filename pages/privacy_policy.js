@@ -79,7 +79,7 @@ export default function Home() {
                 <h3>3.1 Service Providers</h3>
                 <p>Third-party companies or individuals who assist with our operations</p>
                 <h3>3.2 Legal Compliance</h3>
-                <p>When required by law or legal process<br>To protect our rights, privacy, safety, or property</p>
+                <p>When required by law or legal process<br />To protect our rights, privacy, safety, or property</p>
                 <h3>3.3 Business Transactions</h3>
                 <p>In connection with a merger, acquisition, or sale of all or a portion of our assets</p>
                 <h2>4. Your Choices</h2>
