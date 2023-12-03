@@ -70,16 +70,14 @@ export const HomeBanner_short = () => {
                 {/* Appear Second */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <PageTitle className="text-center mx-auto" type="heavy">
-                        The effortless way to plan your meals with the power of
-                        Notion.
+                    Elevate Your Business Conversations Over Exceptional Coffee!
                     </PageTitle>
                 </MotionBTTContainer>
                 {/* Appear Third */}
                 <MotionBTTContainer transition={{ delay: 0.6, duration: 0.5 }}>
                     <Content className="text-center" alignment="center">
                         <p>
-                            Streamline your nutrition journey and achieve your
-                            health goals with ease.{" "}
+                        Seal Your Next Big Deal in the Ambience of Luxury and Sophistication.{" "}
                         </p>
                     </Content>
                 </MotionBTTContainer>
