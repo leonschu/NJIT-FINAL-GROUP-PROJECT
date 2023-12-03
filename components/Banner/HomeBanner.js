@@ -14,8 +14,8 @@ export const HomeBanner = () => {
                 {/* Appear First */}
                 <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
                     <BadgeGroup alignment="center">
-                        <BadgeMessage>Discover NutriTrack!</BadgeMessage>
-                        <BadgeIcon icon="game-icons:meal" />
+                        <BadgeMessage>Unleash your potential!</BadgeMessage>
+                        <BadgeIcon icon="bi:trophy" />
                     </BadgeGroup>
                 </MotionBTTContainer>
                 {/* Appear Second */}
