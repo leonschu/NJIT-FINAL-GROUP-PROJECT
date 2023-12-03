@@ -39,7 +39,9 @@ export const Header = () => {
                         </a>
                     </ButtonGroup>
                 </SectionContainer>
+                
             </SectionContainer>
+            <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
         </header>
     );
 };
