@@ -92,12 +92,12 @@ export default function Home() {
                 <p>We take reasonable measures to protect your information from unauthorized access and disclosure. However, no method of data transmission or storage is completely secure, and we cannot guarantee the security of your data.</p>
                 <h2>6. International Data Transfers</h2>
                 <p>Your information may be transferred to and processed in countries outside your jurisdiction, where privacy laws may be less protective. By using our Services, you consent to such transfers.</p>
-                <h2>7. Children's Privacy</h2>
+                <h2>7. Children&rsquo;s Privacy</h2>
                 <p>Our Services are not intended for individuals under the age of 13, and we do not knowingly collect personal information from children.</p>
                 <h2>8. Changes to This Policy</h2>
                 <p>We may update this Policy to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the updated Policy on our website.</p>
                 <h2>9. Contact Us</h2>
-                <p>If you have any questions or concerns about this Policy or our data practices, please contact us at [insert contact information].</p>
+                <p>If you have any questions or concerns about this Policy or our data practices, please contact us at [insert contact information].</p>    
 
                                       
                 </SectionContainer>
