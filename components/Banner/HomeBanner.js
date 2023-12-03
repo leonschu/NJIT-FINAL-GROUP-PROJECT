@@ -33,7 +33,7 @@ export const HomeBanner = () => {
                     </Content>
                     <div className="mt-6 mb-16 text-center">
                         <ButtonGroup alignment="center">
-                            <Button href="#features">Features</Button>
+                            <Button href="#testimonials">What our customers have to say</Button>
                             <a
                                 role="button"
                                 href="http://eepurl.com/iFjGxI"
