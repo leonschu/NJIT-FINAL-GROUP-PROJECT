@@ -140,8 +140,7 @@ export default function Home() {
                                 <BadgeIcon icon="twemoji:waving-hand" />
                             </BadgeGroup>
                             <PageTitle className="" type="default">
-                                This is what our customers have to say about
-                                this template
+                                This is what our customers have to say
                             </PageTitle>
                             <Columns />
                         </SectionContainer>
