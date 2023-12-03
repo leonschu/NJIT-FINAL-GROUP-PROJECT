@@ -6,19 +6,19 @@ import { v4 as uuid } from "uuid";
 const ContentImageData = [
     {
         id: uuid(),
-        title: "Effortless Planning",
+        title: "We care about your money",
         content:
-            "Say goodbye to meal planning stress! With NutriTrack, planning your meals becomes a breeze. Our user-friendly Notion template lets you create customized daily or weekly meal plans effortlessly. Enjoy a balanced and nutritious diet without the hassle.",
+            "Elite Business Café is a specialty coffee shop designed specifically for affluent business professionals, such as salespeople, lawyers, and executives. It focuses on providing an exclusive atmosphere conducive to business meetings and deal closures, along with high-quality specialty coffee and a premium service experience.",
         align: "right",
-        image: "/features1.png"
+        image: "/persona.png"
     },
     {
         id: uuid(),
-        title: "Shopping List",
+        title: "A Refuge for Power Lunches and Networking",
         content:
-            "We've got your grocery shopping covered! NutriTrack includes a handy shopping list feature. As you plan your meals, the template automatically generates a comprehensive shopping list. No more forgotten items or aimless wandering in the supermarket. Shopping for healthy ingredients has never been easier!",
+            "In the hushed elegance of our cafe, our coveted couches provide the perfect setting for closing business deals, forging new connections, and exchanging ideas with influential individuals. The soft ambiance, the impeccable service, and the aroma of freshly brewed coffee create an atmosphere conducive to both creativity and productivity. Dont miss out on this opportunity and get your phrase to be able to reserve a table today.",
         align: "left",
-        image: "/features2.png"
+        image: "/street.png"
     }
 ];
 
@@ -45,6 +45,7 @@ export const ContentImage = () => {
                             className="drop-shadow-xl w-full offset-y-0 offset-x-8 blur-16"
                         />
                     </div>
+                    
                     <div
                         className={`process-item--content ${
                             item.align === "left"
@@ -55,6 +56,7 @@ export const ContentImage = () => {
                         <h3 className="mb-6 h4 md:h3 font-semibold text-black">
                             {item.title}
                         </h3>
+                        <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
                         <p>{item.content}</p>
                         <ul className="process-item--list space-y-3">
                             {item.listItems?.length &&
@@ -72,9 +74,12 @@ export const ContentImage = () => {
                                     </li>
                                 ))}
                         </ul>
+                        
                     </div>
+                    
                 </div>
             ))}
+            <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
         </SectionContainer>
     );
 };
