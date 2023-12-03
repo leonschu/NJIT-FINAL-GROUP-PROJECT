@@ -83,7 +83,7 @@ export default function Home() {
                 <h3>3.3 Business Transactions</h3>
                 <p>In connection with a merger, acquisition, or sale of all or a portion of our assets</p>
                 <h2>4. Your Choices</h2>
-                <p>You have choices regarding the information you provide and how it's used:</p>
+                <p>You have choices regarding the information you provide and how it&rsquo;s used:</p>
                 <h3>4.1 Opt-Out</h3>
                 <p>You can opt-out of marketing communications by following the instructions provided in the communication.</p>
                 <h3>4.2 Cookies</h3>
