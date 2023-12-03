@@ -9,16 +9,16 @@ const DATA = [
         title: "Template",
         items: [
             {
-                label: "Features",
-                href: "#features"
+                label: "Look inside",
+                href: "/look_inside"
             },
             {
-                label: "Testimonials",
-                href: "#testimonials"
+                label: "Menu",
+                href: "/menu"
             },
             {
                 label: "FAQ",
-                href: "#faq"
+                href: "/faq"
             }
         ]
     },
