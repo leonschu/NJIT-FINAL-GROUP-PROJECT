@@ -27,7 +27,7 @@ const DATA = [
         items: [
             {
                 label: "Privacy Policy",
-                href: "https://njit-final-group-project.vercel.app/privacy_policy",
+                href: "/privacy_policy",
             }
         ]
     }
