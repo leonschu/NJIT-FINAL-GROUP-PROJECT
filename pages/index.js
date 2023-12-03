@@ -146,26 +146,7 @@ export default function Home() {
                             <Columns />
                         </SectionContainer>
                     </MotionBTTContainer>
-                    {/* Accordions */}
-                    <MotionBTTContainer
-                        transition={{ delay: 0.2, duration: 0.5 }}
-                    >
-                        <SectionContainer id="faq" className="faq">
-                            <BadgeGroup alignment="center">
-                                <BadgeMessage>FAQ</BadgeMessage>
-                            </BadgeGroup>
-                            <PageTitle
-                                className="text-center mx-auto"
-                                type="default"
-                            >
-                                Got some burning questions about NutriTrack?{" "}
-                                <br></br>
-                                <br></br>No worries! We&apos;ve got the answers
-                                you need:
-                            </PageTitle>
-                            <Accordion />
-                        </SectionContainer>
-                    </MotionBTTContainer>
+                    
                 </SectionContainer>
             </div>
         </Layout>
