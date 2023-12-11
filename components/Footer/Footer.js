@@ -9,16 +9,16 @@ const DATA = [
         title: "Template",
         items: [
             {
-                label: "Features",
-                href: "#features"
+                label: "Look inside",
+                href: "/look_inside"
             },
             {
-                label: "Testimonials",
-                href: "#testimonials"
+                label: "Menu",
+                href: "/menu"
             },
             {
                 label: "FAQ",
-                href: "#faq"
+                href: "/faq"
             }
         ]
     },
@@ -26,24 +26,8 @@ const DATA = [
         title: "Company",
         items: [
             {
-                label: "About",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
-            },
-            {
-                label: "Twitter",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
-            },
-            {
-                label: "Instagram",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
-            },
-            {
-                label: "Facebook",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
+                label: "Privacy Policy",
+                href: "/privacy_policy",
             }
         ]
     }
@@ -63,7 +47,7 @@ export const Footer = () => {
                             <div className="footer--logo grid gap-8">
                                 <Link href="/">
                                     <Image
-                                        src="/nutritrack.svg"
+                                        src="/banner.png"
                                         alt="logo"
                                         className="h-10 w-auto"
                                         height="25"
@@ -75,10 +59,10 @@ export const Footer = () => {
                                 <ButtonGroup alignment="left">
                                     <a
                                         role="button"
-                                        href="https://github.com/christian-luntok/nutritrack"
+                                        href="http://eepurl.com/iFjGxI"
                                         className="btn btn--secondary"
                                     >
-                                        Get Template
+                                        Join Today
                                         <Icon icon="material-symbols:arrow-forward-rounded" />
                                     </a>
                                 </ButtonGroup>
@@ -127,7 +111,6 @@ export const Footer = () => {
             <SectionContainer className="footer-credits relative z-10">
                 <div className="wrap wrap-px py-6">
                     <p className="my-0">
-                        © {year} Nutritrack. All rights reserved{" - "}
                         <span className="font-normal">
                             A template by{" "}
                             <Link

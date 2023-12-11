@@ -19,8 +19,10 @@
         "@iconify/react": "^4.0.1",
         "@next/font": "^13.1.2",
         "@vercel/og": "^0.0.21",
+        "date-fns": "^2.30.0",
         "eslint-config-next": "13.1.2",
         "framer-motion": "^10.11.2",
+        "gray-matter": "^4.0.3",
         "micro-cors": "^0.1.1",
         "next": "^13.1.2",
         "next-secure-headers": "^2.2.0",
@@ -29,19 +31,21 @@
         "numeral": "^2.0.6",
         "openai": "^4.19.0",
         "react": "18.2.0",
+        "react-cookie-consent": "^9.0.0",
         "react-dom": "18.2.0",
+        "react-ga4": "^2.1.0",
         "react-hot-toast": "^2.4.0",
-        "resize-observer-polyfill": "^1.5.1",
-        "uuid": "^8.3.2",
-        "date-fns": "^2.30.0",
-        "gray-matter": "^4.0.3",
         "remark": "^15.0.1",
-        "remark-html": "^16.0.1"
+        "remark-html": "^16.0.1",
+        "resize-observer-polyfill": "^1.5.1",
+        "uuid": "^8.3.2"
     },
     "engines": {
         "node": ">=18"
     },
     "devDependencies": {
+        "@playwright/test": "^1.39.0",
+        "@types/node": "^20.7.0",
         "autoprefixer": "^10.4.13",
         "clsx": "^1.2.1",
         "eslint": "^8.36.0",
@@ -51,9 +55,7 @@
         "sass": "^1.57.1",
         "stylelint": "^14.16.1",
         "tailwindcss": "^3.2.4",
-        "vitest": "^0.27.1",
-        "@playwright/test": "^1.39.0",
-        "@types/node": "^20.7.0"
+        "vitest": "^0.27.1"
     },
     "name": "nutritrack",
     "version": "1.1.0",

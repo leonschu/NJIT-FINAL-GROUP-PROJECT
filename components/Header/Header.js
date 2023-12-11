@@ -16,7 +16,7 @@ export const Header = () => {
                     <h1 className="logo mb-0">
                         <Link href="/">
                             <Image
-                                src="/nutritrack.svg"
+                                src="/banner.png"
                                 alt="logo"
                                 className="h-6 w-auto"
                                 height="24"
@@ -31,15 +31,17 @@ export const Header = () => {
                     <ButtonGroup className="hidden md:block">
                         <a
                             role="button"
-                            href="https://github.com/christian-luntok/nutritrack"
+                            href="http://eepurl.com/iFjGxI"
                             className="btn btn--secondary ml-4"
                         >
-                            Get Template
+                            Join Today
                             <Icon icon="material-symbols:arrow-forward-rounded" />
                         </a>
                     </ButtonGroup>
                 </SectionContainer>
+                
             </SectionContainer>
+            <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
         </header>
     );
 };
