@@ -21,3 +21,10 @@ test('get started link', async ({ page }) => {
     await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
   });
   
+
+  
+  // Test #1: Check Page Title
+test('Check Page Title', async ({ page }) => {
+  const title = await page.title();
+  expect(title).toBe(expectedTitle);
+});
