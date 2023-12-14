@@ -22,9 +22,16 @@ test('get started link', async ({ page }) => {
   });
   
 
-  
+  const websiteURL = 'https://njit-final-group-project.vercel.app';
+
   // Test #1: Check Page Title
 test('Check Page Title', async ({ page }) => {
   const title = await page.title();
   expect(title).toBe(expectedTitle);
+});
+
+// Test #2: Check Footer
+test('Check Footer', async ({ page }) => {
+  const footerLinkCount = await page.locator('.footer__inner-links a').count();
+  expect(footerLinkCount).toBe(4);
 });
