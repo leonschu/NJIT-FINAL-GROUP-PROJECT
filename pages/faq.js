@@ -21,7 +21,7 @@ export default function Home() {
     return (
         <Layout className="">
             <SEO
-                title="Elite Business Caffee - Privacy Policy"
+                title="Elite Business Caffee - FAQ"
                 description="TBU"
             />
             <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 ">
