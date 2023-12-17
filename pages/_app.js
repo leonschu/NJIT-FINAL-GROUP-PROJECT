@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }) {
             Router.events.off('routeChangeComplete', handleRouteChange);
         };
     }, [isConsentGiven]);
-
+    
     return (
         <>
             <Component {...pageProps} />
@@ -38,8 +38,16 @@ export default function App({ Component, pageProps }) {
                 declineButtonText="I decline"
                 cookieName="myAwesomeCookieName"
                 style={{ background: "#2B373B" }}
-                buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-                declineButtonStyle={{ color: "#4e503b", fontSize: "13px" }}
+                buttonStyle={{
+                    color: "#B8B094", // Use the 500 color from your provided color scheme
+                    fontSize: "13px",
+                    backgroundColor: "#4e503b", // Background color for the "I accept" button
+                }}
+                declineButtonStyle={{
+                    color: "#FF0000", // Red color for the "I decline" button
+                    fontSize: "13px",
+                    backgroundColor: "#4e503b", // Background color for the "I decline" button
+                }}
                 onAccept={() => {
                     initGA();
                     setIsConsentGiven(true);
@@ -56,4 +64,5 @@ export default function App({ Component, pageProps }) {
             </CookieConsent>
         </>
     );
+    
 }
