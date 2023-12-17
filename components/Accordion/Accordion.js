@@ -58,6 +58,12 @@ const accordionData = [
         title: "Is it true that this website can bake cookies?",
         isOpen: true,
         content: "Only the digital kind, unfortunately. We're still perfecting our recipe for chocolate chip."
+    },
+    {
+        id: uuid(),
+        title: "If I get lost on your website, do you offer GPS navigation?",
+        isOpen: true,
+        content: "Not yet, but we do provide a handy search bar to help you find your way."
     }
 ];
 
