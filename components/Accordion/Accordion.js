@@ -7,30 +7,9 @@ import clsx from "clsx";
 const accordionData = [
     {
         id: uuid(),
-        title: "What is Notion?",
+        title: "Does this website work in zero gravity?",
         isOpen: true,
-        content:
-            "Notion is an all-in-one productivity tool that allows you to create notes, databases, and collaborative workspaces, making it easy to organize and manage your tasks, projects, and ideas in one place."
-    },
-    {
-        id: uuid(),
-        title: "Who is this template for?",
-        isOpen: false,
-        content:
-            "This template is specifically designed for Notion creators who want to create a personalized landing page for their Notion workspace, showcasing their projects, services, or content in a visually appealing manner."
-    },
-    {
-        id: uuid(),
-        title: "Do I need to pay for this?",
-        isOpen: false,
-        content: "No, this is free."
-    },
-    {
-        id: uuid(),
-        title: "Where can I ask more questions about this template?",
-        isOpen: false,
-        content:
-            "If you have any further questions or need assistance regarding this template, please feel free to reach out to me on my website, or click the Contact within the navigation links."
+        content: "Absolutely! We're proud to say our website remains 100% functional in zero gravity environments. Astronauts, rejoice!"
     }
 ];
 
