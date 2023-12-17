@@ -18,9 +18,9 @@ export const Header = () => {
                             <Image
                                 src="/banner.png"
                                 alt="logo"
-                                className="h-6 w-auto"
-                                height="24"
-                                width="100"
+                                className="h-10 w-auto"
+                                height="300"
+                                width="1200"
                                 priority
                             />
                         </Link>
