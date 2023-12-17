@@ -102,18 +102,18 @@ module.exports = {
                     950: "#595959"
                 },
                 secondary: {
-                    50: "#FFF9F0",
-                    100: "#FFF5E5",
-                    200: "#FFEBCC",
-                    300: "#FFDEAD",
-                    400: "#FFD494",
-                    500: "#FFC56E",
-                    600: "#FFA929",
-                    700: "#EB8D00",
-                    800: "#C77700",
-                    900: "#8A5300",
-                    950: "#663D00"
-                },
+                    50: "#F8F7F4",   // lighter than before
+                    100: "#F2EDE6",  // shifted from 50
+                    200: "#E8E3DC",  // shifted from 100
+                    300: "#D8D2C4",  // shifted from 200
+                    400: "#C8C1AC",  // new color, slightly lighter than 500
+                    500: "#B8B094",  // your chosen color, shifted from 400
+                    600: "#A69D74",  // shifted from 500
+                    700: "#8F8562",  // shifted from 600
+                    800: "#786D50",  // shifted from 700
+                    900: "#62553E",  // shifted from 800
+                    950: "#4C3D2C"   // shifted from 900
+                },                              
                 badge: "#F1F5F9",
                 badgeText: "#475569"
             }
