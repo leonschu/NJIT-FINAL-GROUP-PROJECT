@@ -324,7 +324,7 @@ export const ContentImage_loyalty = () => {
                             {item.title}
                         </h3>
                         <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
-                        <p>As a valued customer, you're invited to join our exclusive loyalty program, where you'll earn points for every purchase you make and unlock a world of exciting rewards.</p>
+                        <p>As a valued customer, you&apos;re invited to join our exclusive loyalty program, where you&apos;ll earn points for every purchase you make and unlock a world of exciting rewards.</p>
     
                         <ul>
                             <li>Free drinks</li>
