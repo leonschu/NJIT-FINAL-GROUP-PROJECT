@@ -2,7 +2,7 @@ import { BadgeMessage, BadgeGroup, BadgeIcon } from "@components/Badge";
 import { SectionContainer } from "@components/Section";
 import { PageTitle } from "@components/Title";
 import { Layout } from "@components/Layout";
-import { HomeBanner, HomeBanner_short  } from "@components/Banner";
+import { HomeBanner, HomeBanner_short, HomeBanner_FAQ  } from "@components/Banner";
 import { Columns } from "@components/Columns";
 import { ContentImage } from "@components/ContentImage";
 import { Content } from "@components/Content";
@@ -26,6 +26,8 @@ export default function Home() {
             />
             <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 ">
 
+                <HomeBanner_FAQ />
+
                 {/* Components Container */}
                 <SectionContainer className="components--container wrap wrap-px grid gap-8 sm:gap-24">
                 {/* Accordions */}
@@ -33,9 +35,7 @@ export default function Home() {
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
                         <SectionContainer id="faq" className="faq">
-                            <BadgeGroup alignment="center">
-                                <BadgeMessage>FAQ</BadgeMessage>
-                            </BadgeGroup>
+                            
                             <PageTitle
                                 className="text-center mx-auto"
                                 type="default"

@@ -72,3 +72,19 @@ export const HomeBanner_short = () => {
         </SectionContainer>
     );
 };
+
+
+export const HomeBanner_FAQ = () => {
+    return (
+        <SectionContainer className="page-banner--container py-16">
+            <SectionContainer className="page-banner--inner-container wrap wrap-px z-10">
+                {/* Appear First */}
+                <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
+                    <BadgeGroup alignment="center">
+                        <BadgeMessage>FAQ</BadgeMessage>
+                    </BadgeGroup>
+                </MotionBTTContainer>
+            </SectionContainer>
+        </SectionContainer>
+    );
+};
