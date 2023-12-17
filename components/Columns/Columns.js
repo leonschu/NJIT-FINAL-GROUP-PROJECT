@@ -5,10 +5,10 @@ import { v4 as uuid } from "uuid";
 const ColumnData = [
     {
         id: uuid(),
-        title: "Emily J.",
+        title: "Jamie L. - Aspiring Astronaut",
         icon: "carbon:user-avatar-filled-alt",
         content:
-            "NutriPlan has revolutionized my meal planning and nutrition journey. With its intuitive Notion template, I can effortlessly plan my meals, track my nutrition, and stay on top of my health goals. It's truly a game-changer!"
+        "I used to think rocket science was hard, then I found this website. Now, I'm pretty sure I could build a spaceship in my backyard. Bonus points for not having to wear a space suit while browsing!"
     },
     {
         id: uuid(),
