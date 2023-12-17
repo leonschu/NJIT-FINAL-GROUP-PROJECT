@@ -22,7 +22,7 @@ export default function Home() {
         <Layout className="">
             <SEO
                 title="Elite Business Caffee - Inside"
-                description="TBU"
+                description="Seal Your Next Big Deal in the Ambience of Luxury and Sophistication."
             />
             <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 ">
                 {/* { Page Banner } */}

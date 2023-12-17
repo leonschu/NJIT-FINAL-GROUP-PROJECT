@@ -10,7 +10,7 @@ export default function PrivacyPolicy({ contentHtml, badgeMessage }) {
         <Layout className="">
             <SEO
                 title="Elite Business Cafe - Privacy Policy"
-                description="Learn about our privacy practices."
+                description="Seal Your Next Big Deal in the Ambience of Luxury and Sophistication."
             />
             <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 ">
                 <HomeBanner_short />
