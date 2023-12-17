@@ -5,8 +5,7 @@ import { v4 as uuid } from "uuid";
 
 import menu_data from '../../content/menu_data';
 import home_content_image from '../../content/home_content_image';
-
-
+import inside_cafe_data from '../../content/inside_cafe_data';
 
 
 export const ContentImage = () => {
@@ -44,7 +43,7 @@ export const ContentImage = () => {
                             {item.title}
                         </h3>
                         <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
-                        <p>{item.content}</p>
+                        <div dangerouslySetInnerHTML={{ __html: item.content }} />
                         <ul className="process-item--list space-y-3">
                             {item.listItems?.length &&
                                 item.listItems.map((listItem) => (
@@ -71,20 +70,14 @@ export const ContentImage = () => {
 };
 
 
-const ContentImageData_inside = [
-    {
-        id: uuid(),
-        align: "left",
-        image: "/inside.png"
-    }
-];
+
 
 
 
 export const ContentImage_inside = () => {
     return (
         <SectionContainer className="process-items mt-16 space-y-16">
-            {ContentImageData_inside.map((item) => (
+            {inside_cafe_data.map((item) => (
                 <div
                     id={item.id}
                     key={item.id}
@@ -112,30 +105,8 @@ export const ContentImage_inside = () => {
                                 : "md:pl-16 lg:pl-24 xl:pl-32  mr-auto"
                         } my-auto content text-black/60`}
                     >
-
-            
-                        <p>Stepping into the cafe, you are immediately enveloped in a sense of warmth and luxury. The rich aroma of freshly brewed coffee mingles with the sweet scent of pastries, creating an irresistible invitation to indulge. Soft, ambient lighting casts a flattering glow over the plush furnishings, while carefully curated artwork adorns the walls, adding a touch of sophistication to the inviting space.</p>
-                        <br></br>
-                        <p>Underfoot, a plush carpet cushions your every step, its soft fibers providing a welcome respite from the harshness of the outside world. Comfortable couches beckon you to sink into their embrace, promising hours of relaxation and conversation. Their rich fabrics and ample proportions exude an air of opulence, while their plush cushions promise to cradle you in comfort.</p>
-                        <br></br>
-                        <p>The cafe&aposs seating arrangements are designed to cater to a variety of preferences. For those seeking intimate conversations, cozy booths tucked away in corners provide a sense of privacy and seclusion. For larger groups, spacious tables offer ample room to spread out and enjoy each others company.</p>
-
-                        <div class="seating-capacity">
-                            <strong>Seating capacity:</strong> 50 people
-                        </div>
-                        
-                        <div class="booths">
-                        <strong>Booths 1-4:</strong> There are four cozy booths located in the corners of the cafe. Each booth can comfortably seat four people.
-                        </div>
-                        <div class="tables">
-                        <strong>Tables 1-6:</strong> There are 10 tables located throughout the cafe. The tables are a variety of sizes, from small tables for two people to large tables for six people.
-                        </div>
-                        <div class="couches">
-                        <strong>Couches 1-8 (Reservable):</strong> There are two large couches located in the center of the cafe. The couches are plush and comfortable, and they can each seat up to four people.
-                        </div>
-               
-        
-
+                        <div dangerouslySetInnerHTML={{ __html: item.content }} />
+ 
                         <ul className="process-item--list space-y-3">
                             {item.listItems?.length &&
                                 item.listItems.map((listItem) => (
