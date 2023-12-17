@@ -9,6 +9,7 @@ import { Content } from "@components/Content";
 import { Accordion } from "@components/Accordion";
 import { MotionBTTContainer } from "@components/Motion";
 import SEO from "@components/SEO/SEO";
+import { getPurpose } from '../lib/markdown2';
 import {
     CardBody,
     CardGroup,
@@ -17,7 +18,7 @@ import {
     Card
 } from "@components/Card";
 
-export default function Home() {
+export default function Home({ contentHtml }) {
     return (
         <Layout className="">
             <SEO
@@ -39,8 +40,9 @@ export default function Home() {
                                 <BadgeMessage><b>Our Purpose</b></BadgeMessage>
                             </BadgeGroup>
                             <Content className="text-center" alignment="center">
+                           
                                 <p>
-                                Elite Business Café is a specialty coffee shop designed specifically for affluent business professionals, such as salespeople, lawyers, and executives. It focuses on providing an exclusive atmosphere conducive to business meetings and deal closures, along with high-quality specialty coffee and a premium service experience.
+                                <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
                                 </p>
 
                                 <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
@@ -76,4 +78,13 @@ export default function Home() {
             </div>
         </Layout>
     );
+}
+
+export async function getStaticProps() {
+    const { contentHtml } = await getPurpose('our_purpose.md');
+    return {
+        props: {
+            contentHtml,
+        },
+    };
 }
