@@ -34,6 +34,12 @@ const accordionData = [
         title: "Can I find the meaning of life on your site?",
         isOpen: true,
         content: "Our site is full of wonders, but for life's big questions, we recommend a good book or a long walk."
+    },
+    {
+        id: uuid(),
+        title: "Is it safe to visit your website during a full moon?",
+        isOpen: true,
+        content: "Yes, and it’s also werewolf-approved for night browsing."
     }
 ];
 
