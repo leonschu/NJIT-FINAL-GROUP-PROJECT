@@ -1,12 +1,10 @@
 import { SectionContainer } from "@components/Section";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import { v4 as uuid } from "uuid";
-
 import menu_data from '../../content/menu_data';
 import home_content_image from '../../content/home_content_image';
 import inside_cafe_data from '../../content/inside_cafe_data';
-
+import secret_page_data from '../../content/secret_page_data';
 
 export const ContentImage = () => {
     return (
@@ -170,7 +168,7 @@ export const ContentImage_menu = () => {
                             {item.title}
                         </h3>
                         <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
-                        <p>{item.content}</p>
+                        <div dangerouslySetInnerHTML={{ __html: item.content }} />
                         <ul className="process-item--list space-y-3">
                             {item.listItems?.length &&
                                 item.listItems.map((listItem) => (
@@ -197,19 +195,12 @@ export const ContentImage_menu = () => {
 };
 
 
-const ContentImageData_loyalty = [
-    {
-        id: uuid(),
-        title: "Unlock Exclusive Rewards",
-        align: "right",
-        image: "/card.png"
-    }
-];
+
 
 export const ContentImage_loyalty = () => {
     return (
         <SectionContainer className="process-items mt-16 space-y-16">
-            {ContentImageData_loyalty.map((item) => (
+            {secret_page_data.map((item) => (
                 <div
                     id={item.id}
                     key={item.id}
@@ -241,16 +232,7 @@ export const ContentImage_loyalty = () => {
                             {item.title}
                         </h3>
                         <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
-                        <p>As a valued customer, you&apos;re invited to join our exclusive loyalty program, where you&apos;ll earn points for every purchase you make and unlock a world of exciting rewards.</p>
-    
-                        <ul>
-                            <li>Free drinks</li>
-                            <li>Free food items</li>
-                            <li>Early access to new products</li>
-                            <li>Invitations to special events</li>
-                        </ul>
-
-                        <p>Thank you for being a valued customer!</p>
+                        <div dangerouslySetInnerHTML={{ __html: item.content }} />
 
                         <ul className="process-item--list space-y-3">
                             {item.listItems?.length &&
