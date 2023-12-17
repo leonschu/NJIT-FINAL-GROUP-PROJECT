@@ -79,7 +79,6 @@ export const ContentImage = () => {
                     
                 </div>
             ))}
-            <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
         </SectionContainer>
     );
 };
@@ -198,7 +197,7 @@ const ContentImageData_menu = [
         title: "Engineer's Espresso Elixir",
         content:
             "Precision and simplicity find their perfect blend in the Engineer's Espresso Elixir. This drink features a single-origin espresso, delicately enhanced with a drop of hazelnut syrup and complemented by the smoothness of steamed oat milk. The crowning touch is a tiny, edible gear-shaped chocolate, symbolizing the intricate and detailed work of engineers. This drink is a nod to the focused and meticulous nature of engineering, made with a rare coffee bean known for its clarity-inducing properties. It's a special brew, exclusively crafted for those who appreciate the fine details in both their work and their coffee, making it a distinctive and beloved choice on our menu.",
-        align: "right",
+        align: "left",
         image: "/drink3.png"
     },
     {
@@ -214,8 +213,8 @@ const ContentImageData_menu = [
         title: "Biotech Brew",
         content:
             "The Biotech Brew is a harmonious fusion of health and science. This innovative drink combines the refreshing qualities of green tea with the energizing kick of espresso, enhanced with a hint of mint extract and the zest of lemon. The swirl of spirulina, forming a DNA helix design atop the drink, not only adds a nutrient boost but also symbolizes the power and potential of biotechnology. This drink is specially crafted for health-conscious innovators and biotech enthusiasts, offering a unique blend that caters to both well-being and energy needs. It stands out on our menu as an exclusive choice for those who are passionate about the intersection of health, science, and coffee.",
-        align: "right",
-        image: "/drink4.png"
+        align: "left",
+        image: "/drink5.png"
     }
 ];
 
@@ -276,7 +275,87 @@ export const ContentImage_menu = () => {
                     
                 </div>
             ))}
-            <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
+        </SectionContainer>
+    );
+};
+
+
+const ContentImageData_loyalty = [
+    {
+        id: uuid(),
+        title: "Unlock Exclusive Rewards",
+        align: "right",
+        image: "/card.png"
+    }
+];
+
+export const ContentImage_loyalty = () => {
+    return (
+        <SectionContainer className="process-items mt-16 space-y-16">
+            {ContentImageData_loyalty.map((item) => (
+                <div
+                    id={item.id}
+                    key={item.id}
+                    className="process-item--container grid md:grid-cols-2 gap-y-8"
+                >
+                    <div
+                        className={`process-item--image rounded-3xl ${
+                            item.align === "left" ? "md:order-1" : ""
+                        }`}
+                    >
+                        <Image
+                            src={item.image}
+                            width={512}
+                            height={512}
+                            objectFit="cover"
+                            alt="Process Banner 1"
+                            className="drop-shadow-xl w-full offset-y-0 offset-x-8 blur-16"
+                        />
+                    </div>
+                    
+                    <div
+                        className={`process-item--content ${
+                            item.align === "left"
+                                ? "md:pr-16 lg:pr-24 xl:pr-32 ml-auto"
+                                : "md:pl-16 lg:pl-24 xl:pl-32  mr-auto"
+                        } my-auto content text-black/60`}
+                    >
+                        <h3 className="mb-6 h4 md:h3 font-semibold text-black">
+                            {item.title}
+                        </h3>
+                        <div className="mt-5" style={{ background: 'linear-gradient(103deg, #382E0A -1.23%, #A69D74 99.83%)', height: '2px' }}></div>
+                        <p>As a valued customer, you&apos;re invited to join our exclusive loyalty program, where you&apos;ll earn points for every purchase you make and unlock a world of exciting rewards.</p>
+    
+                        <ul>
+                            <li>Free drinks</li>
+                            <li>Free food items</li>
+                            <li>Early access to new products</li>
+                            <li>Invitations to special events</li>
+                        </ul>
+
+                        <p>Thank you for being a valued customer!</p>
+
+                        <ul className="process-item--list space-y-3">
+                            {item.listItems?.length &&
+                                item.listItems.map((listItem) => (
+                                    <li
+                                        id={listItem.id}
+                                        key={listItem.id}
+                                        className="inline-grid grid-flow-col-dense"
+                                    >
+                                        <Icon
+                                            icon="ph:seal-check-bold"
+                                            className="w-6 h-6 text-secondary-500 mr-2"
+                                        />
+                                        {listItem.content}
+                                    </li>
+                                ))}
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+            ))}
         </SectionContainer>
     );
 };
