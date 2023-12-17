@@ -12,10 +12,10 @@ const ColumnData = [
     },
     {
         id: uuid(),
-        title: "Jason F.",
+        title: "Alex D. - Professional Cat Herder",
         icon: "carbon:user-avatar-filled-alt",
         content:
-            "I've tried various meal planning tools, but NutriPlan stands out from the rest. The customizable layouts and seamless recipe integration make it a breeze to create delicious and healthy meals. It's become an essential part of my wellness routine."
+        "Managing a herd of cats is a walk in the park compared to finding a good website. But this site? It's like a giant catnip for my organizational needs. My feline friends and I give it two paws up!"
     },
     {
         id: uuid(),
