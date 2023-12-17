@@ -132,7 +132,7 @@ export const ContentImage_inside = () => {
                         <br></br>
                         <p>Underfoot, a plush carpet cushions your every step, its soft fibers providing a welcome respite from the harshness of the outside world. Comfortable couches beckon you to sink into their embrace, promising hours of relaxation and conversation. Their rich fabrics and ample proportions exude an air of opulence, while their plush cushions promise to cradle you in comfort.</p>
                         <br></br>
-                        <p>The cafe's seating arrangements are designed to cater to a variety of preferences. For those seeking intimate conversations, cozy booths tucked away in corners provide a sense of privacy and seclusion. For larger groups, spacious tables offer ample room to spread out and enjoy each other's company.</p>
+                        <p>The cafe&aposs seating arrangements are designed to cater to a variety of preferences. For those seeking intimate conversations, cozy booths tucked away in corners provide a sense of privacy and seclusion. For larger groups, spacious tables offer ample room to spread out and enjoy each others company.</p>
 
                         <div class="seating-capacity">
                             <strong>Seating capacity:</strong> 50 people
