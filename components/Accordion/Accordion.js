@@ -28,6 +28,12 @@ const accordionData = [
         title: "Will using this site increase my IQ?",
         isOpen: true,
         content: "We can't promise an IQ boost, but you'll definitely feel smarter!"
+    },
+    {
+        id: uuid(),
+        title: "Can I find the meaning of life on your site?",
+        isOpen: true,
+        content: "Our site is full of wonders, but for life's big questions, we recommend a good book or a long walk."
     }
 ];
 
