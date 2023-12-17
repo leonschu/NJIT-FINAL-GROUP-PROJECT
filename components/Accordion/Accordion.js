@@ -10,6 +10,12 @@ const accordionData = [
         title: "Does this website work in zero gravity?",
         isOpen: true,
         content: "Absolutely! We're proud to say our website remains 100% functional in zero gravity environments. Astronauts, rejoice!"
+    },
+    {
+        id: uuid(),
+        title: "Can I access the website with my mind?",
+        isOpen: true,
+        content: "We're still working on telepathic interfaces. For now, please use a standard computer or mobile device."
     }
 ];
 
