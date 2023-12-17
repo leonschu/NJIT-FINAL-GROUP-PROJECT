@@ -16,6 +16,12 @@ const accordionData = [
         title: "Can I access the website with my mind?",
         isOpen: true,
         content: "We're still working on telepathic interfaces. For now, please use a standard computer or mobile device."
+    },
+    {
+        id: uuid(),
+        title: "Is it true that this website was once mistaken for an undiscovered planet?",
+        isOpen: true,
+        content: "While we can't confirm nor deny this, we do like to think our website is out of this world!"
     }
 ];
 
