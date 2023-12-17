@@ -8,7 +8,7 @@ const ContentImageData = [
         id: uuid(),
         title: "We care about your money",
         content:
-            "Elite Business Café is a specialty coffee shop designed specifically for affluent business professionals, such as salespeople, lawyers, and executives. It focuses on providing an exclusive atmosphere conducive to business meetings and deal closures, along with high-quality specialty coffee and a premium service experience.",
+            "At Elite Business Café, we understand that money isn't just important – it's everything. Our exclusive environment caters to those who know the value of a dollar and the thrill of multiplying it. Here, we don't just serve coffee; we serve opportunities to expand your wealth. Remember, they say money can't buy happiness, but we've never seen anyone frown in a limo, clad in a $10,000 suit and a Rolex. Let us be your partner in your journey to unparalleled financial success.",
         align: "right",
         image: "/persona.png"
     },
