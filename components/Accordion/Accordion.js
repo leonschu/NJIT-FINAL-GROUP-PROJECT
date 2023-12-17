@@ -22,6 +22,12 @@ const accordionData = [
         title: "Is it true that this website was once mistaken for an undiscovered planet?",
         isOpen: true,
         content: "While we can't confirm nor deny this, we do like to think our website is out of this world!"
+    },
+    {
+        id: uuid(),
+        title: "Will using this site increase my IQ?",
+        isOpen: true,
+        content: "We can't promise an IQ boost, but you'll definitely feel smarter!"
     }
 ];
 
