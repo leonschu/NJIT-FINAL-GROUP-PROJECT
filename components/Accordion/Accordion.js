@@ -46,6 +46,12 @@ const accordionData = [
         title: "Do you offer a discount to time travelers?",
         isOpen: true,
         content: "Yes, but only if you visited us yesterday."
+    },
+    {
+        id: uuid(),
+        title: "Can my pet access your website?",
+        isOpen: true,
+        content: "While designed for humans, tech-savvy pets might find it intriguing!"
     }
 ];
 
