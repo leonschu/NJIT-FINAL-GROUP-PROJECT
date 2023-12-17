@@ -19,10 +19,10 @@ const ColumnData = [
     },
     {
         id: uuid(),
-        title: "Miguel J.",
+        title: "Morgan R. - Time Travel Enthusiast",
         icon: "carbon:user-avatar-filled-alt",
         content:
-            "NutriPlan has made meal planning and tracking nutrition so much easier and enjoyable. The comprehensive features and user-friendly interface have helped me stay on track with my health goals. I highly recommend it to anyone looking for a convenient and effective solution."
+        "I've visited websites from 1999 to 2050, and this is by far the best one yet! It's so good, I decided not to go back to the future. Now, if only I could remember where I parked my time machine..."
     },
     {
         id: uuid(),
