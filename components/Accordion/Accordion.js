@@ -40,6 +40,12 @@ const accordionData = [
         title: "Is it safe to visit your website during a full moon?",
         isOpen: true,
         content: "Yes, and it’s also werewolf-approved for night browsing."
+    },
+    {
+        id: uuid(),
+        title: "Do you offer a discount to time travelers?",
+        isOpen: true,
+        content: "Yes, but only if you visited us yesterday."
     }
 ];
 
