@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-const index_page = "http://localhost:3000";
+const index_page = "http://localhost:3000/index";
 
 test('Check Page Title', async ({ page }) => {
     // Replace with your Next.js application's URL
