@@ -4,7 +4,7 @@ import { PageTitle } from "@components/Title";
 import { Layout } from "@components/Layout";
 import { HomeBanner, HomeBanner_short  } from "@components/Banner";
 import { Columns } from "@components/Columns";
-import { ContentImage } from "@components/ContentImage";
+import { ContentImage_menu } from "@components/ContentImage";
 import { Content } from "@components/Content";
 import { Accordion } from "@components/Accordion";
 import { MotionBTTContainer } from "@components/Motion";
@@ -27,10 +27,28 @@ export default function Home() {
             <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 ">
                 {/* { Page Banner } */}
                 <HomeBanner_short />
-                {/* Components Container */}
                 <SectionContainer className="components--container wrap wrap-px grid gap-8 sm:gap-24">
-                <h1>Menu</h1>                                     
-                </SectionContainer>
+                
+                    {/* Features */}
+                    <MotionBTTContainer
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                    >
+                        <SectionContainer id="features" className="features">
+                            <BadgeGroup alignment="center">
+                                <BadgeMessage><b>Drink Menu</b></BadgeMessage>
+                            </BadgeGroup>
+
+                            <ContentImage_menu />
+                        
+                        </SectionContainer>
+
+                        <SectionContainer id="features" className="features">
+                        </SectionContainer>
+                        
+
+                    </MotionBTTContainer>
+                    </SectionContainer>
+
             </div>
         </Layout>
     );
