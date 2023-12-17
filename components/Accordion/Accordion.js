@@ -52,6 +52,12 @@ const accordionData = [
         title: "Can my pet access your website?",
         isOpen: true,
         content: "While designed for humans, tech-savvy pets might find it intriguing!"
+    },
+    {
+        id: uuid(),
+        title: "Is it true that this website can bake cookies?",
+        isOpen: true,
+        content: "Only the digital kind, unfortunately. We're still perfecting our recipe for chocolate chip."
     }
 ];
 
