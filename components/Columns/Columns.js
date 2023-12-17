@@ -26,10 +26,10 @@ const ColumnData = [
     },
     {
         id: uuid(),
-        title: "Kim L.",
+        title: "Casey B. - Underwater Basket Weaver",
         icon: "carbon:user-avatar-filled-alt",
         content:
-            "I can't imagine my nutrition journey without NutriPlan. It has simplified the way I plan my meals and track my progress. The ability to customize layouts and easily integrate recipes has made healthy eating a breeze. It's been a true lifesaver!"
+        "Who knew underwater basket weaving had so much in common with web design? This site is a breath of fresh air – figuratively speaking, of course. I can’t weave baskets underwater and surf the web at the same time, but if I could, I would!"
     }
 ];
 
