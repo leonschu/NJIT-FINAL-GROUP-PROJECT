@@ -102,3 +102,22 @@ test('FAQ IQ Increase Question Test', async ({ page }) => {
   const answer = page.locator(answerSelector);
   await expect(answer).toBeVisible();
 });
+
+// Test #7 FAQ Dropdown Question #5 Test
+test('FAQ Meaning of Life Question Test', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/faq');
+
+  // Selector for the FAQ question button
+  const questionSelector = 'button:text("Can I find the meaning of life on your site?")';
+
+  // Selector for the FAQ answer content
+  const answerSelector = 'div.accordion-item--content:has-text("Our site is full of wonders, but for life\'s big questions, we recommend a good book or a long walk.")';
+
+  // Click the question
+  await page.click(questionSelector);
+
+  // Check if the answer is now visible
+  const answer = page.locator(answerSelector);
+  await expect(answer).toBeVisible();
+});
+
