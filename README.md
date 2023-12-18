@@ -15,7 +15,24 @@ NJIT Final Group Project repository for Fall 2023. A hub for team meetings, sign
 - [Customer Journey](docs/Customer_Journey.md)
 - [📝 **IS601 Final Project: User Stories**](https://www.figma.com/file/ZkyO5DLknuRx9sBYcO2KvP/IS601---Final-Project---User-Stories?type=whiteboard&node-id=0-1&t=gQ9pDYrZhaXhBH2z-0)
 
-  
+# Project Structure 🌲
+
+Below is the folder structure of the project:
+
+root/
+├── components
+│   └── This folder contains all modules that are used to build the graphical components of the website
+├── content
+│   └── To change the content without having to cahnge the code, one can simply change it in the folder. The web pages will then automatically be rendered. 
+│── lib
+│   └── Ths folder contains the functions used to render the md content
+│── pages
+│   └── All final pages and their header set up can be found here
+│── public
+│   └── All images
+└── styles
+    └── All css styles
+
 
 # Meeting Sign-In Sheet
 Link: [here](docs/sign_in.md) 🚀🌐 
