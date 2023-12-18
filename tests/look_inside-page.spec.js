@@ -75,7 +75,6 @@ test('Clicking the logo returns to the homepage', async ({ page }) => {
 });
 
 // Test #6
-// Test #6 Mailchimp Test
 test('Mailchimp subscription test from business site', async ({ page }) => {
   // Navigate to your business website
   await page.goto('https://njit-final-group-project.vercel.app/look_inside');
