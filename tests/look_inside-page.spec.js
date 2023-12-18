@@ -15,8 +15,8 @@ test('Check Page Title', async ({ page }) => {
     expect(title).toBe('Elite Business Caffee - Inside');
   });
 
-  // Test #2 Check Nav Bar in Mobile View
-  test('Mobile Navbar Dropdown Test on Look Inside Page', async ({ page }) => {
+  // Test #2
+  test('Mobile Navbar Dropdown Visibility Test on Look Inside Page', async ({ page }) => {
     // Set viewport to mobile dimensions
     await page.setViewportSize({ width: 375, height: 667 });
 
@@ -26,7 +26,7 @@ test('Check Page Title', async ({ page }) => {
     // Click the navbar button to expand the menu
     await page.click('button[data-collapse-toggle="navbar-default"]');
 
-    // Verify that the navigation menu items are now visible
-    const navMenuItems = page.locator('ul.header-nav--menu li.header-nav--menu-item');
-    await expect(navMenuItems).toContainText('Look inside');
+    // Verify that the entire navigation menu is now visible
+    const navMenu = page.locator('ul.header-nav--menu');
+    await expect(navMenu).toBeVisible();
 });
