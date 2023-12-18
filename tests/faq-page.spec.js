@@ -121,3 +121,20 @@ test('FAQ Meaning of Life Question Test', async ({ page }) => {
   await expect(answer).toBeVisible();
 });
 
+// Test #8 FAQ Dropdown Question #6 Test
+test('FAQ Full Moon Safety Question Test', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/faq');
+
+  // Selector for the FAQ question button
+  const questionSelector = 'button:text("Is it safe to visit your website during a full moon?")';
+
+  // Selector for the FAQ answer content
+  const answerSelector = 'div.accordion-item--content:has-text("Yes, and it’s also werewolf-approved for night browsing.")';
+
+  // Click the question
+  await page.click(questionSelector);
+
+  // Check if the answer is now visible
+  const answer = page.locator(answerSelector);
+  await expect(answer).toBeVisible();
+});
