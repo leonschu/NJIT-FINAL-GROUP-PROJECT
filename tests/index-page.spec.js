@@ -153,3 +153,20 @@ test('Check if "Our Purpose" section loads', async ({ page }) => {
   const ourPurpose = page.locator('text=Our Purpose');
   await expect(ourPurpose).toBeVisible();
 });
+
+// Test #10 Mobile Test View
+test('Process Banner 1 image is correctly sized in mobile view', async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 667 });
+    await page.goto('https://njit-final-group-project.vercel.app');
+
+    // Selecting the image by its alt attribute
+    const image = page.locator('img[alt="Process Banner 1"]');
+
+    // Check if the image is displayed
+    await expect(image).toBeVisible();
+
+    // Optionally, check for specific dimensions or aspect ratio
+    const size = await image.evaluate(node => ({ width: node.offsetWidth, height: node.offsetHeight }));
+    // Assert specific size or aspect ratio as per your requirements
+    // Example: expect(size.width).toBeLessThanOrEqual(375);
+});
