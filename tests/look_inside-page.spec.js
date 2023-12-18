@@ -30,3 +30,18 @@ test('Check Page Title', async ({ page }) => {
     const navMenu = page.locator('ul.header-nav--menu');
     await expect(navMenu).toBeVisible();
 });
+
+// Test #3
+test('Check if Process Banner 1 image loads', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/look_inside'); // Adjust the URL to the specific page
+
+  // Select the image by its alt attribute
+  const image = page.locator('img[alt="Process Banner 1"]');
+
+  // Check if the image is visible
+  await expect(image).toBeVisible();
+
+  // Optionally, check if the image is fully loaded
+  const isLoaded = await image.evaluate(node => node.complete && node.naturalHeight !== 0);
+  expect(isLoaded).toBeTruthy();
+});
