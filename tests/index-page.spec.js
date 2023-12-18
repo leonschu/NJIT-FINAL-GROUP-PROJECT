@@ -56,3 +56,21 @@ test('Check Page Title', async ({ page }) => {
   // Check if the URL is the homepage URL
   await expect(page).toHaveURL('https://njit-final-group-project.vercel.app/');
 });
+
+// Test #5 Button Hover Color Change
+test('Button changes color on hover to rgb(255, 197, 110)', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app');
+
+
+  // Hover over the button
+  await page.hover('.btn.btn--primary[href="/#testimonials"]');
+
+
+  // Wait for some time after hover to allow color change
+  await page.waitForTimeout(500); // 500 milliseconds delay
+
+
+  // Check the color change
+  const color = await page.evaluate(() => {
+      return window.getComputedStyle(document.querySelector('.btn.btn--primary[href="/#testimonials"]')).backgroundColor;
+  });
