@@ -166,3 +166,20 @@ test('Check if images load correctly', async ({ page }) => {
       list.every(img => img.complete && img.naturalWidth !== 0)
   );
 });
+
+// Test #11 Privacy Policy Navigation
+test('Navigation to Privacy Policy page works correctly', async ({ page }) => {
+  // Navigate to the homepage
+  await page.goto('https://njit-final-group-project.vercel.app');
+ 
+ 
+  // Click on the Menu link
+  await page.click("a[href='/privacy_policy']"); // Using the href attribute as the selector
+ 
+ 
+  // Check if the URL is correct
+  await expect(page).toHaveURL('https://njit-final-group-project.vercel.app/privacy_policy');
+ 
+ 
+  // Add any additional assertions if needed, like checking for a specific element on the Menu page
+ });
