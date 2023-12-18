@@ -19,19 +19,17 @@ NJIT Final Group Project repository for Fall 2023. A hub for team meetings, sign
 
 Below is the folder structure of the project:
 
+```
 root/
-├── components
-│   └── This folder contains all modules that are used to build the graphical components of the website
-├── content
-│   └── To change the content without having to cahnge the code, one can simply change it in the folder. The web pages will then automatically be rendered. 
-│── lib
-│   └── Ths folder contains the functions used to render the md content
-│── pages
-│   └── All final pages and their header set up can be found here
-│── public
-│   └── All images
-└── styles
-    └── All css styles
+├── components/      # This folder contains all modules for the graphical components of the website.
+├── content/         # To change the content without changing the code, edit files here. Web pages will automatically re-render.
+├── lib/             # This folder contains functions used to render the markdown content.
+├── pages/           # All final pages and their header setup can be found here.
+└── public/          
+    ├── images/      # All images.
+    └── styles/      # All CSS styles.
+```
+
 
 
 # Meeting Sign-In Sheet
