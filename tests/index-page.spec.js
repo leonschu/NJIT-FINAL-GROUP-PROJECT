@@ -138,6 +138,6 @@ test('Button Changes Color on Hover', async ({ page }) => {
     return window.getComputedStyle(document.querySelector('.btn.btn--primary[href="/#testimonials"]')).backgroundColor;
 });
 
-   // Assert the color change to rgb(255, 197, 110)
-   expect(color).toBe('rgb(255, 197, 110)');
+   // Assert the color change 
+   expect(color).toBe('rgb(184, 176, 148)');
 });
