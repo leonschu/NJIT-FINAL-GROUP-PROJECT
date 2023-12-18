@@ -104,3 +104,19 @@ await page.fill('input[name="MERGE2"]', 'TestLastName'); // Last Name
   // Check for confirmation - adjust based on Mailchimp's confirmation behavior
   // Example: await expect(page).toHaveURL('https://app.us12.list-manage.com/subscribe/post');
 });
+
+// Playwright Test #7 Check Header Visibility
+test('Header is visible on all pages', async ({ page }) => {
+  // List of URLs to check
+  const urls = [
+      'https://njit-final-group-project.vercel.app/',
+      'https://njit-final-group-project.vercel.app/menu',
+      'https://njit-final-group-project.vercel.app/look_inside',
+      'https://njit-final-group-project.vercel.app/faq'
+  ];
+  for (const url of urls) {
+      await page.goto(url);
+      const header = page.locator('#header'); // Using the id selector for the header
+      await expect(header).toBeVisible();
+  }
+});
