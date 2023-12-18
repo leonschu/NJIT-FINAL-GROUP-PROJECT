@@ -49,7 +49,7 @@ test('Check if Process Banner 1 image loads', async ({ page }) => {
 // Test #4
 test('Navigation to FAQ page works correctly', async ({ page }) => {
   // Navigate to the homepage
-  await page.goto('https://njit-final-group-project.vercel.app');
+  await page.goto('https://njit-final-group-project.vercel.app/look_inside');
  
  
   // Click on the Menu link
@@ -58,4 +58,18 @@ test('Navigation to FAQ page works correctly', async ({ page }) => {
  
   // Check if the URL is correct
   await expect(page).toHaveURL('https://njit-final-group-project.vercel.app/faq');
+});
+
+// Test #5
+test('Clicking the logo returns to the homepage', async ({ page }) => {
+  // Go to the Menu page
+  await page.goto('https://njit-final-group-project.vercel.app/look_inside');
+
+
+  // Click on the logo
+  await page.click('img[alt="logo"]'); // or '.h-6.w-auto' if using the class
+
+
+  // Check if the URL is the homepage URL
+  await expect(page).toHaveURL('https://njit-final-group-project.vercel.app/');
 });
