@@ -57,25 +57,7 @@ test('Check Page Title', async ({ page }) => {
   await expect(page).toHaveURL('https://njit-final-group-project.vercel.app/');
 });
 
-// Test #5 Button Hover Color Change
-test('Button changes color on hover to rgb(255, 197, 110)', async ({ page }) => {
-  await page.goto('https://njit-final-group-project.vercel.app');
-
-
-  // Hover over the button
-  await page.hover('.btn.btn--primary[href="/#testimonials"]');
-
-
-  // Wait for some time after hover to allow color change
-  await page.waitForTimeout(500); // 500 milliseconds delay
-
-
-  // Check the color change
-  const color = await page.evaluate(() => {
-      return window.getComputedStyle(document.querySelector('.btn.btn--primary[href="/#testimonials"]')).backgroundColor;
-  });
-
-// Test #6 Testimonial Test
+// Test #5 Testimonial Test
 test('Clicking on "What Our Customers Have to Say" scrolls to Testimonials section', async ({ page }) => {
   await page.goto('https://njit-final-group-project.vercel.app');
 
@@ -92,7 +74,7 @@ test('Clicking on "What Our Customers Have to Say" scrolls to Testimonials secti
   await expect(testimonialsSection).toBeVisible();
 });
 
-// Test #7 Mailchimp Test
+// Test #6 Mailchimp Test
 test('Mailchimp subscription test from business site', async ({ page }) => {
   // Navigate to your business website
   await page.goto('https://njit-final-group-project.vercel.app');
