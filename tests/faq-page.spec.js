@@ -1,3 +1,4 @@
+
 import { test, expect } from "@playwright/test";
 
 const index_page = "http://localhost:3000/faq";
