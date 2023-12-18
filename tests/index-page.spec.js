@@ -141,3 +141,15 @@ test('Button Changes Color on Hover', async ({ page }) => {
    // Assert the color change 
    expect(color).toBe('rgb(184, 176, 148)');
 });
+
+// Test #9 Check "Our Purpose" logo
+test('Check if "Our Purpose" section loads', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app');
+
+  // Optionally, wait for a specific time if there's an animation
+  await page.waitForTimeout(1000); // Adjust time based on the animation duration
+
+  // Check for the visibility of the "Our Purpose" section
+  const ourPurpose = page.locator('text=Our Purpose');
+  await expect(ourPurpose).toBeVisible();
+});
