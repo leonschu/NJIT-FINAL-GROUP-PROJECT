@@ -84,3 +84,21 @@ test('FAQ Undiscovered Planet Question Test', async ({ page }) => {
   const answer = page.locator(answerSelector);
   await expect(answer).toBeVisible();
 });
+
+// Test #6 FAQ Dropdown Question #4 Test
+test('FAQ IQ Increase Question Test', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/faq');
+
+  // Selector for the FAQ question button
+  const questionSelector = 'button:text("Will using this site increase my IQ?")';
+
+  // Selector for the FAQ answer content
+  const answerSelector = 'div.accordion-item--content:has-text("We can\'t promise an IQ boost, but you\'ll definitely feel smarter!")';
+
+  // Click the question
+  await page.click(questionSelector);
+
+  // Check if the answer is now visible
+  const answer = page.locator(answerSelector);
+  await expect(answer).toBeVisible();
+});
