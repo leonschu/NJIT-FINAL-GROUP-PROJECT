@@ -73,3 +73,35 @@ test('Clicking the logo returns to the homepage', async ({ page }) => {
   // Check if the URL is the homepage URL
   await expect(page).toHaveURL('https://njit-final-group-project.vercel.app/');
 });
+
+// Test #6
+// Test #6 Mailchimp Test
+test('Mailchimp subscription test from business site', async ({ page }) => {
+  // Navigate to your business website
+  await page.goto('https://njit-final-group-project.vercel.app/look_inside');
+
+
+  // Click the 'Join Today' button
+  await page.click('a.btn--secondary[href="http://eepurl.com/iFjGxI"]');
+
+
+  // Wait for the new page to load (Mailchimp subscription form)
+  await page.waitForLoadState('networkidle');
+
+
+  // Fill out the subscription form on Mailchimp page
+// Fill out the subscription form on Mailchimp page with fake data
+await page.fill('input[name="MERGE0"]', 'test@example.com'); // Corrected selector for the Email field
+await page.fill('input[name="MERGE1"]', 'TestFirstName'); // First Name
+await page.fill('input[name="MERGE2"]', 'TestLastName'); // Last Name
+
+
+
+
+  // Click the 'Subscribe' button on Mailchimp page
+  await page.click('input.formEmailButton[name="submit"]');
+
+
+  // Check for confirmation - adjust based on Mailchimp's confirmation behavior
+  // Example: await expect(page).toHaveURL('https://app.us12.list-manage.com/subscribe/post');
+});
