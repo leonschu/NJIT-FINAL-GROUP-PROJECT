@@ -176,5 +176,21 @@ test('FAQ Pet Access Question Test', async ({ page }) => {
 });
 
 // Test #11 FAQ Dropdown Question #9 Test
+test('FAQ Website Baking Cookies Question Test', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/faq');
+
+  // Selector for the FAQ question button
+  const questionSelector = 'button:text("Is it true that this website can bake cookies?")';
+
+  // Selector for the FAQ answer content
+  const answerSelector = 'div.accordion-item--content:has-text("Only the digital kind, unfortunately. We\'re still perfecting our recipe for chocolate chip.")';
+
+  // Click the question
+  await page.click(questionSelector);
+
+  // Check if the answer is now visible
+  const answer = page.locator(answerSelector);
+  await expect(answer).toBeVisible();
+});
 
 // Test #12 FAQ Dropdown Question #10 Test
