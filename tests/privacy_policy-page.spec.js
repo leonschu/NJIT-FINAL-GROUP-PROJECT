@@ -7,9 +7,9 @@ test('Check Page Title', async ({ page }) => {
     await page.goto(index_page);
   
     // Wait for the title to be set to the expected value
-    await page.waitForFunction(() => document.title === 'Elite Business Caffee - Privacy Policy');
+    await page.waitForFunction(() => document.title === 'Elite Business Cafe - Privacy Policy');
   
     // Retrieve the title and assert its value
     const title = await page.title();
-    expect(title).toBe('Elite Business Caffee - Privacy Policy');
+    expect(title).toBe('Elite Business Cafe - Privacy Policy');
   });
