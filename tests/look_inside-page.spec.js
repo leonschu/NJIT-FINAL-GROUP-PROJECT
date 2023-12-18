@@ -28,8 +28,5 @@ test('Check Page Title', async ({ page }) => {
 
     // Verify that the navigation menu items are now visible
     const navMenuItems = page.locator('ul.header-nav--menu li.header-nav--menu-item');
-    await expect(navMenuItems).toBeVisible();
-
-    // Optionally, check for specific menu items
-    // Example: await expect(navMenuItems).toContainText('Look inside');
+    await expect(navMenuItems).toContainText('Look inside');
 });
