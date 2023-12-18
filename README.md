@@ -25,9 +25,8 @@ root/
 ├── content/         # To change the content without changing the code, edit files here. Web pages will automatically re-render.
 ├── lib/             # This folder contains functions used to render the markdown content.
 ├── pages/           # All final pages and their header setup can be found here.
-└── public/          
-    ├── images/      # All images.
-    └── styles/      # All CSS styles.
+├── public/          # All images.
+└── styles/          # All CSS styles.
 ```
 
 
