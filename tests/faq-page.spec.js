@@ -194,3 +194,19 @@ test('FAQ Website Baking Cookies Question Test', async ({ page }) => {
 });
 
 // Test #12 FAQ Dropdown Question #10 Test
+test('FAQ GPS Navigation Question Test', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/faq');
+
+  // Selector for the FAQ question button
+  const questionSelector = 'button:text("If I get lost on your website, do you offer GPS navigation?")';
+
+  // Selector for the FAQ answer content
+  const answerSelector = 'div.accordion-item--content:has-text("Not yet, but we do provide a handy search bar to help you find your way.")';
+
+  // Click the question
+  await page.click(questionSelector);
+
+  // Check if the answer is now visible
+  const answer = page.locator(answerSelector);
+  await expect(answer).toBeVisible();
+});
