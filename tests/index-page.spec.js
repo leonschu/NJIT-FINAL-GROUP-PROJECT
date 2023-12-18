@@ -105,7 +105,7 @@ await page.fill('input[name="MERGE2"]', 'TestLastName'); // Last Name
   // Example: await expect(page).toHaveURL('https://app.us12.list-manage.com/subscribe/post');
 });
 
-// Playwright Test #7 Check Header Visibility
+// Test #7 Check Header Visibility
 test('Header is visible on all pages', async ({ page }) => {
   // List of URLs to check
   const urls = [
@@ -119,4 +119,25 @@ test('Header is visible on all pages', async ({ page }) => {
       const header = page.locator('#header'); // Using the id selector for the header
       await expect(header).toBeVisible();
   }
+});
+
+// Test #8 Hover Page Color Test
+test('Button Changes Color on Hover', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app');
+
+
+  // Hover over the button
+  await page.hover('.btn.btn--primary[href="/#testimonials"]');
+
+
+  // Wait for some time after hover to allow color change
+  await page.waitForTimeout(500); // 500 milliseconds delay
+
+  // Check the Color Change
+  const color = await page.evaluate(() => {
+    return window.getComputedStyle(document.querySelector('.btn.btn--primary[href="/#testimonials"]')).backgroundColor;
+});
+
+   // Assert the color change to rgb(255, 197, 110)
+   expect(color).toBe('rgb(255, 197, 110)');
 });
