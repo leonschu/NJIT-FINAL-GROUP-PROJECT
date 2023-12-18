@@ -45,3 +45,17 @@ test('Check if Process Banner 1 image loads', async ({ page }) => {
   const isLoaded = await image.evaluate(node => node.complete && node.naturalHeight !== 0);
   expect(isLoaded).toBeTruthy();
 });
+
+// Test #4
+test('Navigation to FAQ page works correctly', async ({ page }) => {
+  // Navigate to the homepage
+  await page.goto('https://njit-final-group-project.vercel.app');
+ 
+ 
+  // Click on the Menu link
+  await page.click("a[href='/faq']"); // Using the href attribute as the selector
+ 
+ 
+  // Check if the URL is correct
+  await expect(page).toHaveURL('https://njit-final-group-project.vercel.app/faq');
+});
