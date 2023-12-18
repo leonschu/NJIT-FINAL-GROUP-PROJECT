@@ -42,3 +42,17 @@ test('Check Page Title', async ({ page }) => {
  
   // Add any additional assertions if needed, like checking for a specific element on the Menu page
  });
+
+ // Test #4 Logo Navigation Test
+ test('Clicking the logo returns to the homepage', async ({ page }) => {
+  // Go to the Menu page
+  await page.goto('https://njit-final-group-project.vercel.app/menu');
+
+
+  // Click on the logo
+  await page.click('img[alt="logo"]'); // or '.h-6.w-auto' if using the class
+
+
+  // Check if the URL is the homepage URL
+  await expect(page).toHaveURL('https://njit-final-group-project.vercel.app/');
+});
