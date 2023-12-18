@@ -73,3 +73,18 @@ await page.fill('input[name="MERGE2"]', 'TestLastName'); // Last Name
   // Check for confirmation - adjust based on Mailchimp's confirmation behavior
   // Example: await expect(page).toHaveURL('https://app.us12.list-manage.com/subscribe/post');
 });
+
+// Test #5
+test('Check if Process Banner 1 image loads', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/menu'); // Adjust the URL to the specific page
+
+  // Select the image by its alt attribute
+  const image = page.locator('img[alt="Process Banner 1"]');
+
+  // Check if the image is visible
+  await expect(image).toBeVisible();
+
+  // Optionally, check if the image is fully loaded
+  const isLoaded = await image.evaluate(node => node.complete && node.naturalHeight !== 0);
+  expect(isLoaded).toBeTruthy();
+});
