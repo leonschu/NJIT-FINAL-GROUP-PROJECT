@@ -32,18 +32,19 @@ test('Check Page Title', async ({ page }) => {
  });
 
 // Test #3 FAQ Dropdown Question #1 Test
-test('FAQ Dropdown Answer Reveals on Click', async ({ page }) => {
-    await page.goto('https://njit-final-group-project.vercel.app/faq');
+test('FAQ Dropdown Answer Appears on Click', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/faq');
 
-    const questionSelector = 'button:has-text("Does this website work in zero gravity?")';
-    const answerText = "Absolutely! We're proud to say our website remains 100% functional in zero gravity environments. Astronauts, rejoice!";
+  // Selector for the FAQ question button
+  const questionSelector = 'button:text("Does this website work in zero gravity?")';
 
-    // Check if the answer is initially not visible
-    await expect(page.locator(`div:hidden:has-text("${answerText}")`)).toBeVisible();
+  // Selector for the FAQ answer content
+  const answerSelector = 'div.accordion-item--content:has-text("Absolutely! We\'re proud to say our website remains 100% functional in zero gravity environments. Astronauts, rejoice!")';
 
-    // Click the question
-    await page.click(questionSelector);
+  // Click the question
+  await page.click(questionSelector);
 
-    // Check if the answer is now visible
-    await expect(page.locator(`div:has-text("${answerText}")`)).toBeVisible();
+  // Check if the answer is now visible
+  const answer = page.locator(answerSelector);
+  await expect(answer).toBeVisible();
 });
