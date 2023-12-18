@@ -74,3 +74,20 @@ test('Button changes color on hover to rgb(255, 197, 110)', async ({ page }) => 
   const color = await page.evaluate(() => {
       return window.getComputedStyle(document.querySelector('.btn.btn--primary[href="/#testimonials"]')).backgroundColor;
   });
+
+// Test #6
+test('Clicking on "What Our Customers Have to Say" scrolls to Testimonials section', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app');
+
+
+  // Click on the "What Our Customers Have to Say" button
+  await page.click('text=What our customers have to say');
+
+
+  // Wait for the Testimonials section to be visible
+  const testimonialsSection = page.locator('div.badge-group--message:has-text("Testimonials")');
+
+
+  // Check if the Testimonials section is visible
+  await expect(testimonialsSection).toBeVisible();
+});
