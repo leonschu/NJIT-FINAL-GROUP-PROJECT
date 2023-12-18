@@ -48,3 +48,21 @@ test('FAQ Dropdown Answer Appears on Click', async ({ page }) => {
   const answer = page.locator(answerSelector);
   await expect(answer).toBeVisible();
 });
+
+// Test #4 FAQ Dropdown Question #2 Test
+test('FAQ Telepathic Interface Question Test', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/faq');
+
+  // Selector for the FAQ question button
+  const questionSelector = 'button:text("Can I access the website with my mind?")';
+
+  // Selector for the FAQ answer content
+  const answerSelector = 'div.accordion-item--content:has-text("We\'re still working on telepathic interfaces. For now, please use a standard computer or mobile device.")';
+
+  // Click the question
+  await page.click(questionSelector);
+
+  // Check if the answer is now visible
+  const answer = page.locator(answerSelector);
+  await expect(answer).toBeVisible();
+});
