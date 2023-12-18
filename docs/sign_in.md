@@ -13,12 +13,12 @@ Each student should put an 'X' under their name on the days they have meetings.
 
 ### December 2023
 
-| Date        | Student 1 | Student 2 | Student 3 |
+| Date        | Leon      | Gabriel    | Mark     |
 |-------------|-----------|-----------|-----------|
-| Nov 29 (Wed)|           |           |           |
-| Dec 1 (Fri) |           |           |           |
-| Dec 6 (Wed) |           |           |           |
-| Dec 8 (Fri) |           |           |           |
-| Dec 13 (Wed)|           |           |           |
+| Nov 29 (Wed)|    x      |     x     |     x     |
+| Dec 1 (Fri) |    x      |     x     |     x     |
+| Dec 6 (Wed) |    x      |     x     |     x     |
+| Dec 8 (Fri) |    x      |     x     |     x     |
+| Dec 13 (Wed)|    x      |     x     |     x     |
 
 *Instructions: Please place an 'X' in the cell under your name corresponding to the dates you attend class.*
