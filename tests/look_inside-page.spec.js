@@ -16,19 +16,20 @@ test('Check Page Title', async ({ page }) => {
   });
 
   // Test #2 Check Nav Bar in Mobile View
+  test('Mobile Navbar Dropdown Test on Look Inside Page', async ({ page }) => {
+    // Set viewport to mobile dimensions
+    await page.setViewportSize({ width: 375, height: 667 });
 
-  test('Mobile Navbar Test on Look Inside Page', async ({ page }) => {
-      // Set viewport to mobile dimensions
-      await page.setViewportSize({ width: 375, height: 667 });
-  
-      // Navigate to the Look Inside page
-      await page.goto('https://njit-final-group-project.vercel.app/look_inside');
-  
-      // Click the navbar button to expand the menu
-      await page.click('button[data-collapse-toggle="navbar-default"]');
-  
-      // Verify that the navigation menu is now visible
-      const navMenu = page.locator('div[id="navbar-dropdown"]');
-      await expect(navMenu).toBeVisible();
-  });
-  
+    // Navigate to the Look Inside page
+    await page.goto('https://njit-final-group-project.vercel.app/look_inside');
+
+    // Click the navbar button to expand the menu
+    await page.click('button[data-collapse-toggle="navbar-default"]');
+
+    // Verify that the navigation menu items are now visible
+    const navMenuItems = page.locator('ul.header-nav--menu li.header-nav--menu-item');
+    await expect(navMenuItems).toBeVisible();
+
+    // Optionally, check for specific menu items
+    // Example: await expect(navMenuItems).toContainText('Look inside');
+});
