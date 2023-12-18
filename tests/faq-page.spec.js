@@ -66,3 +66,21 @@ test('FAQ Telepathic Interface Question Test', async ({ page }) => {
   const answer = page.locator(answerSelector);
   await expect(answer).toBeVisible();
 });
+
+// Test #5 FAQ Dropdown Question #3 Test
+test('FAQ Undiscovered Planet Question Test', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/faq');
+
+  // Selector for the FAQ question button
+  const questionSelector = 'button:text("Is it true that this website was once mistaken for an undiscovered planet?")';
+
+  // Selector for the FAQ answer content
+  const answerSelector = 'div.accordion-item--content:has-text("While we can\'t confirm nor deny this, we do like to think our website is out of this world!")';
+
+  // Click the question
+  await page.click(questionSelector);
+
+  // Check if the answer is now visible
+  const answer = page.locator(answerSelector);
+  await expect(answer).toBeVisible();
+});
