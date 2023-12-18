@@ -30,3 +30,18 @@ test('Check Page Title', async ({ page }) => {
  
   // Add any additional assertions if needed, like checking for a specific element on the Menu page
  });
+
+// Test #3 FAQ Dropdown Question #1 Test
+test('FAQ Dropdown Question and Answer Test', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/faq');
+
+  // Click on the FAQ question
+  const questionSelector = 'button:has-text("Does this website work in zero gravity?")';
+  await page.click(questionSelector);
+
+  // Verify that the answer is visible after clicking
+  const answerText = "Absolutely! We're proud to say our website remains 100% functional in zero gravity environments. Astronauts, rejoice!";
+  const answerSelector = `div:has-text("${answerText}")`;
+  const answer = page.locator(answerSelector);
+  await expect(answer).toBeVisible();
+});
