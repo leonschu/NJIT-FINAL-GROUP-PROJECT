@@ -138,3 +138,43 @@ test('FAQ Full Moon Safety Question Test', async ({ page }) => {
   const answer = page.locator(answerSelector);
   await expect(answer).toBeVisible();
 });
+
+// Test #9 FAQ Dropdown Question #7 Test
+test('FAQ Time Traveler Discount Question Test', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/faq');
+
+  // Selector for the FAQ question button
+  const questionSelector = 'button:text("Do you offer a discount to time travelers?")';
+
+  // Selector for the FAQ answer content
+  const answerSelector = 'div.accordion-item--content:has-text("Yes, but only if you visited us yesterday.")';
+
+  // Click the question
+  await page.click(questionSelector);
+
+  // Check if the answer is now visible
+  const answer = page.locator(answerSelector);
+  await expect(answer).toBeVisible();
+});
+
+// Test #10 FAQ Dropdown Question #8 Test
+test('FAQ Pet Access Question Test', async ({ page }) => {
+  await page.goto('https://njit-final-group-project.vercel.app/faq');
+
+  // Selector for the FAQ question button
+  const questionSelector = 'button:text("Can my pet access your website?")';
+
+  // Selector for the FAQ answer content
+  const answerSelector = 'div.accordion-item--content:has-text("While designed for humans, tech-savvy pets might find it intriguing!")';
+
+  // Click the question
+  await page.click(questionSelector);
+
+  // Check if the answer is now visible
+  const answer = page.locator(answerSelector);
+  await expect(answer).toBeVisible();
+});
+
+// Test #11 FAQ Dropdown Question #9 Test
+
+// Test #12 FAQ Dropdown Question #10 Test
