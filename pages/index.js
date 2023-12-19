@@ -1,4 +1,4 @@
-import { BadgeMessage, BadgeGroup, BadgeIcon } from "@components/Badge";
+import { BadgeMessage, BadgeGroup} from "@components/Badge";
 import { SectionContainer } from "@components/Section";
 import { PageTitle } from "@components/Title";
 import { Layout } from "@components/Layout";
@@ -6,17 +6,10 @@ import { HomeBanner } from "@components/Banner";
 import { Columns } from "@components/Columns";
 import { ContentImage } from "@components/ContentImage";
 import { Content } from "@components/Content";
-import { Accordion } from "@components/Accordion";
 import { MotionBTTContainer } from "@components/Motion";
 import SEO from "@components/SEO/SEO";
 import { getPurpose } from '../lib/markdown2';
-import {
-    CardBody,
-    CardGroup,
-    CardHeader,
-    CardImage,
-    Card
-} from "@components/Card";
+
 
 export default function Home({ contentHtml }) {
     return (
