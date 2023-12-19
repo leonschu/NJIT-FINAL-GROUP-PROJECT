@@ -4,6 +4,7 @@ import { Layout } from "@components/Layout";
 import { ContentImage_menu } from "@components/ContentImage";
 import { MotionBTTContainer } from "@components/Motion";
 import SEO from "@components/SEO/SEO";
+import { HomeBanner_short } from "@components/Banner";
 
 export default function Home() {
     return (
