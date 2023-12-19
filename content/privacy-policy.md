@@ -85,9 +85,15 @@ You can opt-out of marketing communications by following the instructions provid
 
 You can manage cookies through your browser settings.
 
+Furthermore, we encourage you to regularly review your account settings and privacy preferences to ensure they align with your expectations and requirements. Your proactive involvement is crucial in maintaining the confidentiality and integrity of your data.
+
 ## 5. Data Security
 
 We take reasonable measures to protect your information from unauthorized access and disclosure. However, no method of data transmission or storage is completely secure, and we cannot guarantee the security of your data.
+
+In light of this, we strongly encourage users to take proactive measures to secure their own data. This includes using strong, unique passwords for accounts, enabling two-factor authentication where possible, and being cautious of phishing scams and suspicious communications. Regularly updating software and using reputable antivirus solutions can also significantly reduce vulnerabilities. Additionally, we recommend users regularly review and monitor their account activity for any unauthorized access. By combining our efforts with responsible user practices, we can enhance overall data protection and minimize risks."
+
+This extension emphasizes user responsibility and practical steps they can take to safeguard their data, complementing the measures your company already implements.
 
 ## 6. International Data Transfers
 
