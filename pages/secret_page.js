@@ -1,10 +1,21 @@
 import { BadgeMessage, BadgeGroup, BadgeIcon } from "@components/Badge";
 import { SectionContainer } from "@components/Section";
+import { PageTitle } from "@components/Title";
 import { Layout } from "@components/Layout";
-import { HomeBanner_short  } from "@components/Banner";
+import { HomeBanner, HomeBanner_short  } from "@components/Banner";
+import { Columns } from "@components/Columns";
 import { ContentImage_loyalty } from "@components/ContentImage";
+import { Content } from "@components/Content";
+import { Accordion } from "@components/Accordion";
 import { MotionBTTContainer } from "@components/Motion";
 import SEO from "@components/SEO/SEO";
+import {
+    CardBody,
+    CardGroup,
+    CardHeader,
+    CardImage,
+    Card
+} from "@components/Card";
 
 export default function Home() {
     return (
