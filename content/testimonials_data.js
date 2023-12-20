@@ -10,10 +10,10 @@ const testimonials_data = [
     },
     {
         id: uuid(),
-        title: "Alex D. - Professional Cat Herder",
+        title: "Alex D. - Tech Industry Titan",
         icon: "carbon:user-avatar-filled-alt",
         content:
-        "Managing a herd of cats is a walk in the park compared to finding a good website. But this site? It's like a giant catnip for my organizational needs. My feline friends and I give it two paws up!"
+        "The baristas are like coffee alchemists, transforming beans into liquid gold. But it's more than just the coffee, It's the entire atmosphere."
     },
     {
         id: uuid(),
