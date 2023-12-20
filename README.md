@@ -1,7 +1,7 @@
 # NJIT-FINAL-GROUP-PROJECT
 Link: [here](https://njit-final-group-project.vercel.app) 🚀🌐 
 
-Figma: [🚀 **IS601 Final Project**](https://www.figma.com/file/sQhb6zsUG9fpHQ6XX3lGB6/IS601---Final?node-id=0%3A1&mode=dev)
+Figma: [🚀 **IS601 Final Project**](https://www.figma.com/file/kMBX8rNx0GfyOqDpA2T0j6/IS601---Final?type=design&node-id=2110-5&mode=design&t=aM41G7pdPP7wKMOm-0)
 
 Youtube: [🚀 **YouTube**](https://youtu.be/Whhp4sihgsQ)
 
@@ -15,7 +15,7 @@ NJIT Final Group Project repository for Fall 2023. A hub for team meetings, sign
 - [SWOT Analysis](docs/SWOT.md)
 - [Persona](docs/PERSONA.MD)
 - [Customer Journey](docs/Customer_Journey.md)
-- [📝 **IS601 Final Project: User Stories**](https://www.figma.com/file/ZkyO5DLknuRx9sBYcO2KvP/IS601---Final-Project---User-Stories?type=whiteboard&node-id=0-1&t=gQ9pDYrZhaXhBH2z-0)
+- [📝 **IS601 Final Project: User Stories WIP**](https://www.figma.com/file/ZkyO5DLknuRx9sBYcO2KvP/IS601---Final-Project---User-Stories?type=whiteboard&node-id=0-1&t=gQ9pDYrZhaXhBH2z-0)
 
 # Project Structure 🌲
 
