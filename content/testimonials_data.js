@@ -17,10 +17,10 @@ const testimonials_data = [
     },
     {
         id: uuid(),
-        title: "Morgan R. - Time Travel Enthusiast",
+        title: "Morgan R. - Account Executive",
         icon: "carbon:user-avatar-filled-alt",
         content:
-        "I've visited websites from 1999 to 2050, and this is by far the best one yet! It's so good, I decided not to go back to the future. Now, if only I could remember where I parked my time machine..."
+        "I've logged enough hours in boardrooms to know a good chair when I see one, but the seats here, they're something else entirely."
     },
     {
         id: uuid(),
