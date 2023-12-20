@@ -3,10 +3,10 @@ import { v4 as uuid } from "uuid";
 const testimonials_data = [
     {
         id: uuid(),
-        title: "Jamie L. - Aspiring Astronaut",
+        title: "Jamie L. - Venture Capitalist",
         icon: "carbon:user-avatar-filled-alt",
         content:
-        "I used to think rocket science was hard, then I found this website. Now, I'm pretty sure I could build a spaceship in my backyard. Bonus points for not having to wear a space suit while browsing!"
+        "It's the kind of place where the air hums with possibility, and the aroma of single-origin Ethiopian Yirgacheffe beans awakens your senses before you even reach your table."
     },
     {
         id: uuid(),
