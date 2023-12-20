@@ -24,10 +24,10 @@ const testimonials_data = [
     },
     {
         id: uuid(),
-        title: "Casey B. - Underwater Basket Weaver",
+        title: "Casey B. - Startup Entrepreneur",
         icon: "carbon:user-avatar-filled-alt",
         content:
-        "Who knew underwater basket weaving had so much in common with web design? This site is a breath of fresh air – figuratively speaking, of course. I can’t weave baskets underwater and surf the web at the same time, but if I could, I would!"
+        "This place is my secret weapon, Elite Business Cafe is the central nervous system of the city, all the energy channeled right here through these windows."
     }
 ];
 
